@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whiteboard</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+</head>
+<body>
+  <div class="whiteboard" id="whiteboard"></div>
+  <input type="text" id="inputField" placeholder="Type Something..." oninput="updateWhiteboard()">
+  <div class="font-size">
+    <button onclick="changeFontSize(16)">16</button>
+    <button onclick="changeFontSize(20)">20</button>
+    <button onclick="changeFontSize(24)">24</button>
+    <button onclick="changeFontSize(28)">28</button>
+    <button onclick="changeFontSize(32)">32</button>
+    <button onclick="changeFontSize(36)">36</button>
+  </div>
+  <button onclick="calculateExpression()">Calculate</button>
+</body>
+</html>
